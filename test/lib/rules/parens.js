@@ -11,7 +11,7 @@
 import test from 'ava';
 import avaRuleTester from '../../../ava-rule-tester.js';
 
-const rule = require('../../../lib/rules/parens.js');
+const { rules: { parens: rule } } = require('../../../lib');
 
 //------------------------------------------------------------------------------
 // Tests
