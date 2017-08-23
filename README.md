@@ -1,5 +1,7 @@
 # eslint-plugin-arrow-body-parens
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/BerkeleyTrue/eslint-plugin-arrow-body-parens.svg)](https://greenkeeper.io/)
+
 Rule to require parenthesis in arrow function body expressions.
 
 ## Installation
