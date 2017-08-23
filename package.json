@@ -1,0 +1,43 @@
+{
+  "name": "eslint-plugin-arrow-body-parens",
+  "version": "0.0.0",
+  "description": "Rule to require parenthesis in arrow function body expressions.",
+  "scripts": {
+    "lint": "eslint --ext=js,jsx .",
+    "lint:fix": "eslint . --ext=js,jsx --fix",
+    "pretest": "npm run lint",
+    "test": "ava",
+    "test:watch": "ava --watch",
+    "format": "prettier 'lib/**/*.js' --trailing-comma all --single-quote --write",
+    "postformat": "npm run lint:fix",
+    "commit": "git-cz",
+    "commitmsg": "validate-commit-msg"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-freecodecamp"
+    }
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "Berkeley Martinez",
+  "main": "lib/index.js",
+  "dependencies": {
+    "requireindex": "~1.1.0"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "babel-eslint": "^7.2.3",
+    "commitizen": "^2.9.6",
+    "cz-freecodecamp": "^1.0.0",
+    "eslint": "^4.5.0",
+    "eslint-plugin-import": "^2.7.0",
+    "husky": "^0.14.3",
+    "prettier": "^1.5.3",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "license": "ISC"
+}
