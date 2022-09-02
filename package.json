@@ -26,17 +26,18 @@
   "author": "Berkeley Martinez",
   "main": "lib/index.js",
   "dependencies": {
-    "requireindex": "~1.1.0"
+    "requireindex": "~1.2.0"
   },
   "devDependencies": {
-    "ava": "^0.22.0",
-    "babel-eslint": "^7.2.3",
-    "commitizen": "^2.9.6",
-    "cz-freecodecamp": "^1.0.0",
-    "eslint": "^4.5.0",
-    "eslint-plugin-import": "^2.7.0",
-    "husky": "^0.14.3",
-    "prettier": "^1.5.3",
+    "@babel/eslint-parser": "^7.18.9",
+    "ava": "^4.3.3",
+    "commitizen": "^4.2.5",
+    "cz-freecodecamp": "^1.0.1",
+    "eslint": "^8.23.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-utils": "^3.0.0",
+    "husky": "^8.0.1",
+    "prettier": "^2.7.1",
     "validate-commit-msg": "^2.14.0"
   },
   "license": "ISC"
