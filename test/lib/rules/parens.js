@@ -8,8 +8,8 @@
 // Requirements
 //------------------------------------------------------------------------------
 
-import test from 'ava';
-import avaRuleTester from '../../../ava-rule-tester.js';
+const test = require('ava');
+const avaRuleTester = require('../../../ava-rule-tester.js');
 
 const { rules: { parens: rule } } = require('../../../lib');
 
@@ -25,7 +25,7 @@ ruleTester.run('arrow-expression-body-parens', rule, {
     'var foo = () => 0;',
     'var addToB = (a) => { b =  b + a };',
     'var foo = () => { /* do nothing */ };',
-    'var foo = () => {\n /* do nothing */ \n};',
+    'var foo = () => {\n /* do nothing with newlines */ \n};',
     'var foo = (retv, name) => {\nretv[name] = true;\nreturn retv;\n};',
     'var foo = () => ({});',
     'var foo = () => bar();',
